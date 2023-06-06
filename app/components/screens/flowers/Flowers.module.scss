@@ -1,0 +1,19 @@
+.catalog {
+	@apply mt-20;
+
+	> div {
+		@apply mt-14;
+	}
+
+	> h3 {
+		@apply text-[64px] leading-none text-[#323232];
+	}
+}
+
+.catalog_grid {
+	@apply grid gap-10;
+
+	margin-top: 40px !important;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-row: auto;
+}

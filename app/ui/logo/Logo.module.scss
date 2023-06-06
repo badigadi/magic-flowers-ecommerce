@@ -1,0 +1,13 @@
+.dark_logo {
+	@apply relative bottom-2 cursor-pointer select-none font-logo text-[64px] leading-none text-dark-primary;
+
+	> span {
+		@apply text-dark-gray;
+	}
+}
+
+@media (max-width: 1000px) {
+	.dark_logo {
+		@apply bottom-1 text-[56px];
+	}
+}

@@ -1,0 +1,15 @@
+.header {
+	@apply m-auto flex max-w-7xl justify-between gap-8;
+
+	> div {
+		@apply flex flex-grow justify-end gap-12;
+	}
+}
+
+@media (max-width: 860px) {
+	.header {
+		> div {
+			@apply gap-6;
+		}
+	}
+}

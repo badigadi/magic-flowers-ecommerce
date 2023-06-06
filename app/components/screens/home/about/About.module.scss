@@ -1,0 +1,89 @@
+.about {
+	@apply mt-10 w-full pt-10;
+
+	> h6 {
+		@apply text-[55px] font-light leading-none text-dark-gray;
+	}
+
+	> div {
+		@apply relative mt-6 flex h-auto gap-16 rounded-[30px] bg-primary px-8 py-[80px];
+
+		> img {
+			@apply absolute left-0 bottom-0 z-0 select-none;
+
+			&:first-child {
+				@apply right-0 top-0 left-auto;
+			}
+		}
+	}
+}
+
+.ceo {
+	@apply min-w-[500px] text-center;
+
+	> h4 {
+		@apply mt-7 text-[30px] font-bold leading-none;
+	}
+
+	> h5 {
+		@apply mt-2 text-[25px] leading-[1.1];
+	}
+
+	> img {
+		@apply relative z-10 mx-auto;
+	}
+}
+
+.text {
+	@apply max-w-[714px];
+
+	> p {
+		@apply py-[2px] indent-10 text-[22px] leading-[1.20] text-[#000];
+	}
+
+	> button {
+		@apply mt-5 text-xl leading-none text-gray brightness-95 transition-all duration-300;
+
+		&:hover {
+			@apply brightness-75;
+		}
+	}
+}
+
+.modal_text {
+	@apply py-2 indent-10 leading-[27px];
+}
+
+@media (max-width: 1240px) {
+	.text {
+		> p {
+			@apply text-[19px];
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.text {
+		> p {
+			@apply text-[18px];
+		}
+	}
+
+	.ceo {
+		@apply min-w-[400px];
+	}
+}
+
+@media (max-width: 1000px) {
+	.about {
+		> div {
+			@apply flex-col items-center justify-center;
+		}
+	}
+
+	.text {
+		> p {
+			@apply mx-auto;
+		}
+	}
+}

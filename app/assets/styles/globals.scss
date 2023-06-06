@@ -1,0 +1,20 @@
+@import 'app/assets/styles/variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply text-base text-black;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	opacity: 0.2 !important;
+}

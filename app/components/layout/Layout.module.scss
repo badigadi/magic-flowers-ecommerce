@@ -1,0 +1,12 @@
+.layout {
+	@apply mt-[68px] scroll-smooth bg-white px-8 font-sans;
+	> .content {
+		@apply relative mx-auto flex min-h-[88vh] max-w-7xl flex-col justify-between;
+	}
+}
+
+@media (max-width: 1000px) {
+	.layout {
+		@apply mt-12;
+	}
+}

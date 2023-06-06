@@ -1,0 +1,23 @@
+.cart_item {
+	@apply relative flex h-[460px] w-[260px] flex-col justify-end gap-5 rounded-[10px] bg-[#F2F2F2] p-[15px] pb-5 text-left;
+
+	> img {
+		@apply absolute left-0 top-0 z-0 h-[260px] w-full rounded-[10px];
+	}
+
+	> h6 {
+		@apply relative z-10 text-[28px] font-bold leading-none text-[#ea75db];
+	}
+
+	> span {
+		@apply relative z-10 text-sm leading-none text-black;
+	}
+
+	> button {
+		@apply relative z-10 h-10 w-full rounded-[7px] border-2 border-[#ea75db] bg-[#ea75db] text-[22px] leading-none text-white transition-all duration-300;
+
+		&:hover {
+			@apply bg-[#F2F2F2] text-black;
+		}
+	}
+}
